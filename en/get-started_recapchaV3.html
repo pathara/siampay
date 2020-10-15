@@ -118,6 +118,13 @@ function reloadImg(id) {
      document.getElementById("emailForm").submit();
    }
  </script>
+ <script type="text/javascript">
+      var onloadCallback = function() {
+        grecaptcha.render('emailForm', {
+          'sitekey' : '6LdGgdcZAAAAADECMHUdnfLNtYQWGxNp9UfC4-WX'
+        });
+      };
+    </script>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom" class="cbp-spmenu-push contact-us">
@@ -289,15 +296,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="row">
         <div class="col-md-12">
           <div style="margin-top: 120px;">        			
-          <!-- VALIDATE -->
-          					<script type="text/javascript" src="js/jquery.validate.js"></script>
-							<script type="text/javascript">
-								$(document).ready(function(){
-									$("#emailForm").validate();
-								});
-							</script>
-			
-          			<!-- END OF VALIDATE -->
+          
 
           
             <form action="https://www.siampay.com/b2c2/form/th/enquiryMail-siampay.jsp" method="post" id="emailForm" name="emailForm">
@@ -371,11 +370,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						
  					</div>
 
-					<button type="submit" value="Submit" class="g-recaptcha btn btn-primary pull-right" id="btnContactUs" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit' data-action='submit'>SUBMIT</button>
+					<button type="submit" value="Submit" class="g-recaptcha" id="btnContactUs" data-sitekey="6LdGgdcZAAAAADECMHUdnfLNtYQWGxNp9UfC4-WX" data-callback='onSubmit' data-action='submit'>SUBMIT</button>
+                   btn btn-primary pull-right
                   </div>
 
               </div>
             </form>
+             <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"async defer></script>
           </div>
         </div>
 
