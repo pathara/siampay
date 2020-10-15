@@ -1,4 +1,4 @@
-﻿html {
+html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -10197,6 +10197,12 @@ fieldset {
   padding: 0;
   width: 100%;
 }
+.borderradius3 {
+	-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+
 
 #emailForm input[type=text], #emailForm input[type=email], #emailForm input[type=tel], #emailForm input[type=url], #emailForm textarea {
   width:100%;
