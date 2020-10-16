@@ -72,6 +72,19 @@ function reloadImg(id) {
     <script src="js/TweenMax.min.js"></script>
     
 
+<script src="https://www.google.com/recaptcha/api.js"></script>
+ <script>
+   function onSubmit(token) {
+     document.getElementById("emailForm").submit();
+   }
+ </script>
+ <script type="text/javascript">
+      var onloadCallback = function() {
+        grecaptcha.render('emailForm', {
+          'sitekey' : '6LdGgdcZAAAAADECMHUdnfLNtYQWGxNp9UfC4-WX'
+        });
+      };
+    </script>
 	
 </head>
 
@@ -358,7 +371,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<a href="#" onClick="return reloadImg('captchaId');"><img alt=""  src="https://www.siampay.com/b2c2/images/en/hip_reload.gif" border="0"style="margin-left:10px;margin-bottom: 20px; padding:10px 0px 5px 17px; border: 1px #ddd solid; background-color:#FFF;"></a>
  </div>
 
-                      <input name="Submit" type="submit" class="button-blue" value="ส่ง" >
+                      <input name="Submit" type="submit" class="g-recaptcha button-blue" data-sitekey="6LdGgdcZAAAAADECMHUdnfLNtYQWGxNp9UfC4-WX" data-callback='onSubmit' data-action='submit' value="ส่ง" >
 <input name="Submit2" type="reset" class="button-blue" value="รีเซ็ต" >
 </div>
 
