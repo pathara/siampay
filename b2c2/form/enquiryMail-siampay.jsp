@@ -32,7 +32,7 @@
 	//websiteurl = "http://202.64.244.238/";
 	
 	// Production
-	websiteurl = "http://www.siampay.com/";
+	websiteurl = "www.siampay.com/";
 	
 	// Check  capcha code
 	
