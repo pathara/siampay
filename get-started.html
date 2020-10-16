@@ -114,6 +114,19 @@ function reloadImg(id) {
 }
 </script>
 
+<script src="https://www.google.com/recaptcha/api.js"></script>
+ <script>
+   function onSubmit(token) {
+     document.getElementById("emailForm").submit();
+   }
+ </script>
+ <script type="text/javascript">
+      var onloadCallback = function() {
+        grecaptcha.render('emailForm', {
+          'sitekey' : '6LdGgdcZAAAAADECMHUdnfLNtYQWGxNp9UfC4-WX'
+        });
+      };
+    </script>
 
 
 </head>
@@ -365,11 +378,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  					</div>
 
 					</div>
-                  <button type="submit" value="Submit" class="btn borderradius3" id="btnContactUs" style="width:97%; margin:0px auto 80px auto;">ส่ง</button>
+                  <button type="submit" value="Submit" class="g-recaptcha btn borderradius3" id="btnContactUs" data-sitekey="6LdGgdcZAAAAADECMHUdnfLNtYQWGxNp9UfC4-WX" data-callback='onSubmit' data-action='submit' style="width:97%; margin:0px auto 80px auto;">ส่ง2</button>
                 </div>
 				
               
             </form>
+		  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"async defer></script>
           </div>
         </div>
 
