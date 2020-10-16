@@ -1,0 +1,16 @@
+        A:link {color:#737373; underline:}
+	    A:visited {color:#E7651A; underline:}
+	    A:hover {color:#000000; underline:}
+        .c_title {font-family: "細明體", "新細明體"; font-size: 16pt; color: #333333; font-style: normal; font-weight: bolder}
+        .c_text {font-family: "細明體", "新細明體"; font-size: 10pt; color: #333333; font-weight: normal}
+        .c_text2 {font-family: "細明體", "新細明體"; font-size: 8pt; color: #666666; font-weight: normal}
+        .c_title2 {font-family: "細明體", "新細明體"; font-size: 12pt; color: #FF6600; font-weight: bolder}
+        .c_error {font-family: "細明體", "新細明體"; font-size: 10pt; color: #FF0000; font-weight: bolder}
+        .c_title3 {font-family: "細明體", "新細明體"; font-size: 12pt; color: #333333; font-style: normal; font-weight: bolder}
+        .e_title {font-family: "Arial"; font-size: 16pt; color: #333333; font-style: normal; font-weight: bolder}
+        .e_text {font-family: "Arial"; font-size: 10pt; color: #333333; font-weight: normal}
+        .e_text2 {font-family: "Arial"; font-size: 8pt; color: #000000; font-weight: normal}
+        .e_title2 {font-family: "Arial"; font-size: 12pt; color: #FF6600; font-weight: bolder}
+        .e_error {font-family: "Arial"; font-size: 10pt; color: #FF0000; font-weight: bolder}
+        .e_title3 {font-family: "Arial"; font-size: 12pt; color: #333333; font-style: normal; font-weight: bolder}
+
