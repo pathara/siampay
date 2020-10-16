@@ -75,12 +75,12 @@ function reloadImg(id) {
 <script src="https://www.google.com/recaptcha/api.js"></script>
  <script>
    function onSubmit(token) {
-     document.getElementById("emailForm").submit();
+     document.getElementById("enquiryForm").submit();
    }
  </script>
  <script type="text/javascript">
       var onloadCallback = function() {
-        grecaptcha.render('emailForm', {
+        grecaptcha.render('enquiryForm', {
           'sitekey' : '6LdGgdcZAAAAADECMHUdnfLNtYQWGxNp9UfC4-WX'
         });
       };
