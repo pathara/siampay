@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(document).ready(function() {
 
 	//$('body,html').attr('oncontextmenu' , 'return false');
 $('body,html').attr('onselectstart', 'return false');

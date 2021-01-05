@@ -82,17 +82,17 @@ $("select").selectBoxIt({
     }),
     function(e) {
         (new WOW).init(), jQuery(window).load(function() {
-            jQuery("#preloader").delay(100).fadeOut("slow"), jQuery("#load").delay(100).fadeOut("slow")
+            jQuery("preloader").delay(100).fadeOut("slow"), jQuery("load").delay(100).fadeOut("slow")
         }), e(function() {
             e(".navbar-nav li a").bind("click", function(o) {
                 var s = e(this);
                 e("html, body").stop().animate({
-                    scrollTop: e(s.attr("href")).offset().top
+                    scrollTop: e(s.attr("#")).offset("#").top
                 }, 1500, "easeInOutExpo"), o.preventDefault()
             }), e("a.page-scroll").bind("click", function(o) {
                 var s = e(this);
                 e("html, body").stop().animate({
-                    scrollTop: e(s.attr("href")).offset().top
+                    scrollTop: e(s.attr("#")).offset("#").top
                 }, 1500, "easeInOutExpo"), o.preventDefault()
             })
         })

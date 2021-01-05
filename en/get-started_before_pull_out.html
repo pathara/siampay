@@ -28,6 +28,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="shortcut icon" href="images/siampay.ico">
   <link href="css/style.css" rel="stylesheet">
   
+
+<!-- jquery 3.5.0 -->
+<script src="js/jquery-3.5.0.min.js"></script>
+<!-- jquery-migrate 3.3.2 - Migrate older jQuery code to jQuery 3.3.2+-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js" integrity="sha512-3fMsI1vtU2e/tVxZORSEeuMhXnT9By80xlmXlsOku7hNwZSHJjwcOBpmy+uu+fyWwGCLkMvdVbHkeoXdAzBv+w==" crossorigin="anonymous"></script>
+
   <script src="js/header.js"></script>
 
     <style>
@@ -308,13 +314,84 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
           
             <form action="https://www.siampay.com/b2c2/form/th/enquiryMail-siampay.jsp" method="post" id="emailForm" name="emailForm">
-             <!-- <h1 class="align-center" style="color: #ffffff;">Get Started</h1>
+              <h1 class="align-center" style="color: #ffffff;">Get Started</h1>
               <p class="align-center" style="padding-bottom: 1.5em; color: #fff;">Kindly complete the form and we’ll contact you shortly to guide your application.</p>
 
-           -->     <br> <br> <br>
-		<h1 style="padding-top: 1.5em; color: #fff;" >This contact form is now under construction</h1>
-		<p style="padding-top: 1.5em; color: #fff;">We’re working hard to make this website available as soon as 
-		possible.</p><br><br><br>
+              <div class="error align-center alert alert-danger" style="display:none;">
+                <i class="fa fa-exclamation-circle"></i>
+                <span></span>
+                <br clear="all">
+              </div>
+              <input type="hidden" name="maillist" value="sales@siampay.com">
+						<input type="hidden" name="lang" value="E">	
+						<!--  ****originalfrom pesopay***
+                        <input type="hidden" name="disableCaptcha" value="T" />
+                        <input type="hidden" name="successUrl" value="https://www.pesopay.com/thankyou.html?success=1" />
+                        <input type="hidden" name="failUrl" value="https://www.pesopay.com/thankyou.html" />
+                        <input type="hidden" name="mailFrom" value="sales@pesopay.com" />
+                        <input type="hidden" name="mailTo" value="sales@pesopay.com" />
+                        <input type="hidden" name="mailTitle" value="Get Started/Sign Up - PesoPay" />
+                        <input type="hidden" name="mailDescription" value="A prospect has signed up on the PesoPay website. Please refer to the details below." />
+                        -->
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+
+                    <input class="col-lg-12 form-control fget" name="name" id="name" type="text" placeholder="Name *" required="required">
+                  </div>
+
+                  <div class="form-group">
+
+                    <input class="form-control fget" id="company" name="companyname" type="text" placeholder="Company *" required="required">
+                  </div>
+
+                  <div class="form-group">
+
+                    <div class="form-group">
+                      <input class="form-control fget" id="email" name="mail"  data-rule-required="true" data-rule-email="true" data-msg-email="Please enter a valid email address" type="text" placeholder="Email Address *" required="required"></div>
+                  </div>
+                  <div class="form-group">
+
+                    <input class="form-control required fget" id="website" type="text" placeholder="Website *" required="required" maxlength="40" name="website">
+                  </div>
+                  <div class="form-group">
+
+                    <input class="form-control fget" name="position" id="position" type="text" placeholder="Designation/Title *" required="required">
+                  </div>
+                </div>
+                <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+
+                    <input class="form-control fget" maxlength="14" name="phone" id="phone" type="text" placeholder="Phone Number *" required="required phone">
+                  </div>
+                  <div class="form-group">
+                    <textarea name="message" id="message" name="detail" class="form-control fget" rows="9" cols="25" required placeholder="Message *"></textarea>
+                  </div>
+					<div class="form-group">
+					<input type="hidden" id="mailTitle" name="type" value="solution" />
+					<input type="hidden" class="cf-icon7" id="message" name="detail" placeholder="Your Message" value="message from get-started page" style="color:#000000;">
+
+
+						
+					<div class="row">
+						<div class="col-md-12 col-lg-6 col-sm-6 col-xs-12"><input class="form-control fget" type='text' name='vCode' maxlength="5" value="" placeholder="Please enter the following verification code" style="color:#fff;">
+						</div>
+						<div class="col-md-12 col-lg-6 col-sm-6 col-xs-12"><img id="captchaId" name="captchaId" class="borderradius3" src="https://www.siampay.com/b2c2/imgservlet/loginVerification" alt="Verification Code" style="margin:0px 0px 0px 0px;padding:5px 0px 5px 12px; border: 1px #ddd solid;background-color:#FFF;" >
+						<a href="#" onClick="return reloadImg('captchaId');"><img alt="" class="borderradius3"  src="https://www.siampay.com/b2c2/images/en/hip_reload.gif" border="0"style="margin:0px 0px 0px 0px; padding:5px 0px 5px 12px; border: 1px #ddd solid; background-color:#FFF;"></a>
+						</div>
+
+					</div>
+						
+						
+ 					</div>
+
+					
+                  </div>
+                  <button type="submit" value="Submit" class="g-recaptcha btn borderradius3" id="btnContactUs" data-sitekey="6LdGgdcZAAAAADECMHUdnfLNtYQWGxNp9UfC4-WX" data-callback='onSubmit' data-action='submit' style="width:95%; margin:0px auto 80px auto;">SUBMIT</button>                
+                  
+				</div>
+              </div>
             </form>
           </div>
         </div>
@@ -329,12 +406,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
   
-<script src="http://code.jquery.com/jquery-migrate-3.3.0.min.js"></script>
+
 <!-- jquery 3.5.0 -->
 <script src="js/jquery-3.5.0.min.js"></script>
 <!-- jquery-migrate 3.3.2 - Migrate older jQuery code to jQuery 3.3.2+-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js" integrity="sha512-3fMsI1vtU2e/tVxZORSEeuMhXnT9By80xlmXlsOku7hNwZSHJjwcOBpmy+uu+fyWwGCLkMvdVbHkeoXdAzBv+w==" crossorigin="anonymous"></script>
 
+  
+
+<!-- jquery 3.5.0 -->
+<script src="js/jquery-3.5.0.min.js"></script>
+<!-- jquery-migrate 3.3.2 - Migrate older jQuery code to jQuery 3.3.2+-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js" integrity="sha512-3fMsI1vtU2e/tVxZORSEeuMhXnT9By80xlmXlsOku7hNwZSHJjwcOBpmy+uu+fyWwGCLkMvdVbHkeoXdAzBv+w==" crossorigin="anonymous"></script>
 
 
   <script src="js/mailer.js"></script>
