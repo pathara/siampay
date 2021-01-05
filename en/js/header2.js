@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(document).ready(function() {
 
 	//$('body,html').attr('oncontextmenu' , 'return false');
 $('body,html').attr('onselectstart', 'return false');
@@ -6,7 +6,7 @@ $('body,html').attr('ondragstart', 'return false');
 $('.sales').attr('href', 'mailto:sales@siampay.com');
 $('.sales').html('sales@siampay.com');
 $('.telno').html('+66 2 642 3272');
-$('.address').html('R.S.Tower, Unit 121/49, Level 11, Ratchadapisek Road, Dindeang, Bangkok 10400 Thailand ');
+$('.address').html('เลขที่ 121/49 ชั้น 11 อาคาร อาร์ เอส ทาวเวอร์ ถนนรัชดาภิเษก แขวงดินแดง เขตดินแดง กรุงเทพมหานคร 10400');
 
 $('#v1').html('<source src="images/header.jpg" type="image/jpg"/><em>Sorry, your browser does not support HTML5 video.</em>');
 /*
@@ -14,7 +14,7 @@ $('#v1').html('<source src="media/bg-pesopay.mp4" type="video/mp4"/><em>Sorry, y
  */
 $('.cryear').html('2020 SIAMPAY.COM. ALL RIGHTS RESERVED');
 $('.country').html('SiamPay');
-$('.about-f').html('SiamPay is the leading online payment gateway system in Thailand. We provide secure and seamless electronic payment solutions for both SME\'s and large enterprises. Our online payment system delivers reliable merchant services that allow businesses to accept online payments ranging from credit cards, internet banking, cash or over-the-counter payments, e-Wallet payments and PayPal.');
+$('.about-f').html('<p> บริษัท เอเชียเพย์(ประเทศไทย)จำกัด เป็นบริษัทในเครือเอเชียเพย์กรุ๊ป ผู้นำด้านการชำระเงินในเอเชีย ก่อตั้งขึ้นในปี พ.ศ.2549 โดยมีวัตถุประสงค์ที่จะนำเสนอบริการด้านการชำระเงินทางอิเล็กทรอนิกส์ ที่มีความล้ำหน้า และความปลอดภัยสูง โดยมีการเชื่อมต่อระบบเพื่อสนองความต้องการของธุรกิจต่างๆในประเทศไทยและภูมิภาคเอเชีย                    </p><p>สยามเพย์ให้บริการด้านต่างๆแก่ลูกค้าหลายประเภท เช่น ระบบรับชำระเงินออนไลน์ อีคอมเมิร์ซ การทำธุรกรรมผ่านบัตรเครดิตออนไลน์ อินเตอร์เนตแบงค์กิ้ง การชำระด้วยเงินสด และอื่นๆอีกมากมาย</p>');
 // Navigation Config //
 // Menu1 //
 $('.mainMenu1').html('Overview');
@@ -26,18 +26,18 @@ $('.mainMenu2').html('Features');
 // $('.mainMenu2').attr('href', 'features.php');
 $('.mainMenu2').addClass('main-menu');
 // Menu3 //
-$('.mainMenu3').html('Services');
+$('.mainMenu3').html('ผลิตภัณฑ์');
 $('.mainMenu3').addClass('main-menu');
 // Menu3 Sub //
-$('.m3title1').html('Card Payments');
-$('.m3title1sub1').html('Credit Card Processing');
+$('.m3title1').html('ชำระเงินด้วยบัตร');
+$('.m3title1sub1').html('บริการชำระเงินด้วยบัตรเครดิต');
 $('.m3title1sub1').attr('href', 'credit-card-processing.html');
-$('.m3title2').html('Alternative Payments');
-$('.m3title2sub1').html('Internet Banking');
+$('.m3title2').html('บริการชำระเงินรูปแบบอื่นๆ');
+$('.m3title2sub1').html('อินเตอร์เนตแบงค์กิ้ง');
 $('.m3title2sub1').attr('href', 'internet-banking.html');/*
 $('.m3title2sub2').html('Over-the-Counter Payments');
 $('.m3title2sub2').attr('href', 'over-the-counter-cash-payments.html');*/
-$('.m3title2sub3').html('China Payments');
+$('.m3title2sub3').html('บริการชำระเงินจากประเทศจีน');
 $('.m3title2sub3').attr('href', 'china-payments.html');/*
 $('.m3title2sub4').html('PayPal');
 $('.m3title2sub4').attr('href', 'paypal.html');*/
@@ -55,17 +55,17 @@ $('.m3title4sub1').html('Mobile Point-of-Sale');
 $('.m3title4sub1').attr('href', 'mobile-point-of-sale.html');*/
 $('.m3title4sub2').html('Tokenization');
 $('.m3title4sub2').attr('href', 'tokenization.html');
-$('.m3title4sub3').html('Recurring Payment');
+$('.m3title4sub3').html('บริการกำหนดระยะเวลาการชำระเงิน');
 $('.m3title4sub3').attr('href', 'recurring-payment.html');
-$('.m3title4sub4').html('Hotel Reservation System');
+$('.m3title4sub4').html('ระบบจองที่พักโรงแรม');
 $('.m3title4sub4').attr('href', 'hotel-reservation-system.html');
-$('.m3title4sub5').html('Online Registration System');
+$('.m3title4sub5').html('ระบบลงทะเบียนออนไลน์');
 $('.m3title4sub5').attr('href', 'online-registration-system.html');
 $('.m3title4sub6').html('Event Management System');
 $('.m3title4sub6').attr('href', 'event-management-system.html');
-$('.m3title4sub7').html('Electronic Voucher');
+$('.m3title4sub7').html('คูปองแบบอิเล็กทรอนิกส์');
 $('.m3title4sub7').attr('href', 'evoucher.html');
-$('.m3title4sub8').html('Customized Payment Page');
+$('.m3title4sub8').html('ระบบปรับแต่งหน้าชำระเงิน');
 $('.m3title4sub8').attr('href', 'customized-payment-page.html');
 $('.m3title4sub9').html('Credit Card Promotion');
 $('.m3title4sub9').attr('href', 'credit-card-promotion.html');
@@ -111,16 +111,16 @@ $('.mainMenu5').attr('href', 'merchant-referral-partnership-program.html');
 $('.mainMenu5').addClass('main-menu');
 $('.mainMenu5').addClass('hide');
 // Menu6 //
-$('.mainMenu6').html('Resources');
+$('.mainMenu6').html('ดาวน์โหลด');
 $('.mainMenu6').addClass('main-menu');
 // Menu6 Sub //
 /*
-$('.mainMenu6sub1 span').html('Product Sheets');
+$('.mainMenu6sub1 span').html('โบรชัวร์ผลิตภัณฑ์');
 $('.mainMenu6sub1').attr('href', 'product-sheets.html');*/
 $('.mainMenu6sub2 span').html('Shopping Cart Plugins');
 $('.mainMenu6sub2').attr('href', 'shopping-cart-plugins.html');
 // Menu7 //
-$('.mainMenu7').html('About');
+$('.mainMenu7').html('เกี่ยวกับเรา');
 $('.mainMenu7').addClass('main-menu');
 // Menu7 Sub //
 $('.mainMenu7sub1 span').html('Company Profile');
